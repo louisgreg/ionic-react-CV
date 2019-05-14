@@ -1,37 +1,27 @@
 import React, { Component } from 'react';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 import '@ionic/core/css/core.css';
 import '@ionic/core/css/ionic.bundle.css';
-import Introduction from '../Introduction/Introduction'
-import Training from '../Training/Training'
-import Experience from '../Experience/Experience'
-import {
-  IonApp,
-  IonToolbar, IonTitle, IonContent,
-  IonHeader,
-  IonCard,
-  IonCardHeader,
-  IonCardTitle,
-  IonCardSubtitle,
-  IonCardContent, 
-  IonAvatar,
-  IonTabs, IonTabBar, IonTabButton, IonIcon, IonLabel, IonBadge,
-} from '@ionic/react';
+
+import { IonApp, IonPage, IonRouterOutlet,
+IonTabs, IonTabBar, IonTabButton, IonIcon, IonLabel, IonBadge, IonHeader, IonTitle, IonToolbar} from '@ionic/react';
 
 class App extends Component {
   render() {
     return (
-      <IonApp>
-         <IonHeader>
+      <Router>
+        <div className="App">
+          <IonApp>
+          <IonHeader>
           <IonToolbar color="primary">
             <IonTitle>Louis POLLIN</IonTitle>
           </IonToolbar>
         </IonHeader>
-
-        <IonContent>
-          <Introduction/>
-          <Training/>
-          <Experience/>
-
+            <IonPage id="main">
+              <IonRouterOutlet>
+              {/*Add route Here*/}
+              </IonRouterOutlet>
+            </IonPage>
           <IonTabs>
             <IonTabBar slot="bottom">
               <IonTabButton tab="Profile">
@@ -55,11 +45,12 @@ class App extends Component {
               </IonTabButton>
             </IonTabBar>
           </IonTabs>
-
-        </IonContent>
-      </IonApp>
+          </IonApp>
+        </div>
+      </Router>
     );
   }
+
 }
 
 export default App;
