@@ -22,29 +22,48 @@ const ExperiencePage = () => (
       </IonToolbar>
     </IonHeader>
     <IonContent>
+
+
       <IonCard>
         <IonCardHeader>
-          <IonCardTitle>Experience</IonCardTitle>
-          <IonCardSubtitle>Software Engineer</IonCardSubtitle>
+          <IonCardTitle>Company 1</IonCardTitle>
+          <IonCardSubtitle>2011 - 2014</IonCardSubtitle>
         </IonCardHeader>
         <IonCardContent>
-          <IonItem>
-            <p>2011 - 2014</p>
-            <h3>Internship 1 - Company 1</h3>
-            <p><em>Cupidatat sed ut tempor sed sunt consectetur duis ut incididunt. Fugiat ad eiusmod esse dolore excepteur ea aute eu quis eu commodo sed voluptate fugiat esse dolor.</em></p>
-          </IonItem>
-          <IonItem>
-            <p>2014 - 2018</p>
-            <h3>Internship 2 - Company 2</h3>
-            <p><em>Non voluptate adipisicing dolore dolor voluptate nostrud sunt consectetur laborum. Ad esse dolor fugiat laboris eu et veniam occaecat ad voluptate elit dolore irure.</em></p>
-          </IonItem>
-          <IonItem>
-            <p>2011 - 2014</p>
-            <h3>Internship 3 - Company 3</h3>
-            <p><em>Laboris ea sit irure anim occaecat ut dolor do elit minim amet dolore irure ad. Qui in laboris nulla voluptate eu in velit enim proident excepteur eiusmod ut.</em></p>
-          </IonItem>
+          <p>Lorem ipsum nulla ut esse nisi eu dolor culpa sint pariatur incididunt dolor velit ut in.</p>
         </IonCardContent>
       </IonCard>
+
+      <IonCard>
+        <IonCardHeader>
+          <IonCardTitle>Company 2</IonCardTitle>
+          <IonCardSubtitle>2014 - 2018</IonCardSubtitle>
+        </IonCardHeader>
+        <IonCardContent>
+          <p>Lorem ipsum irure non ex ad veniam in excepteur nulla sed laboris proident fugiat ullamco duis anim in aute aliqua.</p>
+        </IonCardContent>
+      </IonCard>
+
+      <IonCard>
+        <IonCardHeader>
+          <IonCardTitle>Company 3</IonCardTitle>
+          <IonCardSubtitle>2018 - 2019</IonCardSubtitle>
+        </IonCardHeader>
+        <IonCardContent>
+          <p>Velit enim in sed irure in voluptate eiusmod occaecat mollit sunt incididunt. Lorem ipsum tempor deserunt cillum dolor eiusmod sunt eiusmod amet dolor est minim consequat sit velit proident non laborum proident ad.</p>
+        </IonCardContent>
+      </IonCard>
+
+      <IonCard>
+        <IonCardHeader>
+          <IonCardTitle>Company 4</IonCardTitle>
+          <IonCardSubtitle>2019 - Now</IonCardSubtitle>
+        </IonCardHeader>
+        <IonCardContent>
+          <p>Velit enim in sed irure in voluptate eiusmod occaecat mollit sunt incididunt. Lorem ipsum tempor deserunt cillum dolor eiusmod sunt eiusmod amet dolor est minim consequat sit velit proident non laborum proident ad.</p>
+        </IonCardContent>
+      </IonCard>
+
     </IonContent>
   </>
 )
