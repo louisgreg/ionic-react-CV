@@ -1,12 +1,11 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import '@ionic/core/css/core.css';
 import '@ionic/core/css/ionic.bundle.css';
 
 import AppStack from "./pages/AppStack";
 
-import { IonApp, IonPage, IonRouterOutlet, 
-IonTabs, IonTab, IonTabBar, IonTabButton, IonIcon, IonLabel, IonBadge, IonHeader, IonTitle, IonToolbar} from '@ionic/react';
+import { IonApp } from '@ionic/react';
 
 const App = () => (
   <Router>

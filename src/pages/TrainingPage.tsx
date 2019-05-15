@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import '@ionic/core/css/core.css';
 import '@ionic/core/css/ionic.bundle.css';
 import {
@@ -8,7 +8,6 @@ import {
   IonCardTitle,
   IonCardSubtitle,
   IonCardContent, 
-  IonAvatar,
   IonHeader,
   IonTitle,
   IonToolbar,

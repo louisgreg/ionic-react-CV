@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import '@ionic/core/css/core.css';
 import '@ionic/core/css/ionic.bundle.css';
 import {
@@ -24,7 +24,7 @@ const ProfilePage = () => (
     <IonContent>
       <IonCard>
         <IonAvatar slot="end">
-          <img src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y"/>
+          <img src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y" alt="profile"/>
         </IonAvatar>
         <IonCardHeader>
           <IonCardTitle>My profile</IonCardTitle>
