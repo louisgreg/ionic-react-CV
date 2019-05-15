@@ -4,6 +4,7 @@ import { IonTabs, IonTabButton, IonIcon, IonLabel, IonRouterOutlet, IonTabBar, I
 
 import ProfilePage from './ProfilePage';
 import TrainingPage from './TrainingPage';
+import ExperiencePage from './ExperiencePage';
 
 const AppStack: React.FC = () => (
   <IonPage id="main">
@@ -13,6 +14,7 @@ const AppStack: React.FC = () => (
     <IonRouterOutlet>
       <Route path="/:tab(profile)" component={ProfilePage} exact={true}/>
       <Route path="/:tab(training)" component={TrainingPage} exact={true}/>
+      <Route path="/:tab(experience)" component={ExperiencePage} exact={true}/>
     </IonRouterOutlet>
     <IonTabs>
       <IonTab tab="profile"> Profile Page </IonTab>
@@ -27,7 +29,7 @@ const AppStack: React.FC = () => (
           <IonLabel>Training</IonLabel>
         </IonTabButton>
 
-        <IonTabButton tab="Experience">
+        <IonTabButton tab="Experience" href="/experience">
           <IonIcon name="briefcase" />
           <IonLabel>Experience</IonLabel>
         </IonTabButton>
