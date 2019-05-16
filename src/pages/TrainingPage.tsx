@@ -13,6 +13,7 @@ import {
   IonToolbar,
   IonItem,
 } from '@ionic/react';
+import './TrainingPage.css'
 
 const TrainingPage = () => (
   <>
@@ -22,32 +23,34 @@ const TrainingPage = () => (
       </IonToolbar>
     </IonHeader>
     <IonContent>
-      <IonCard>
-        <IonCardHeader>
-          <IonCardTitle>Training</IonCardTitle>
-          <IonCardSubtitle>Software Engineer</IonCardSubtitle>
-        </IonCardHeader>
-        <IonCardContent>
-          <IonItem>
-            <p>2011 - 2014</p>
-            <h3>Scientific Baccalaureate</h3>
-            <h4>Lycee Portes de l'Oisans - Vizille, France</h4>
+
+      <div className="timeline">
+        <div className="container left">
+          <div className="content">
+            <h2>2011 - 2014</h2>
+            <h4>Scientific Baccalaureate</h4>
+            <p>Lycee Portes de l'Oisans - Vizille, France</p>
             <p><em>obtained with honors</em></p>
-          </IonItem>
-          <IonItem>
-            <p>2014 - 2018</p>
-            <h3>BACHELOR, MASTER IN COMPUTER ENGINEERING</h3>
-            <h4>Lycee Portes de l'Oisans - Vizille, France</h4>
+          </div>
+        </div>
+        <div className="container right">
+          <div className="content">
+            <h2>2014 - 2018</h2>
+            <h4>BACHELOR, MASTER IN COMPUTER ENGINEERING</h4>
+            <p>Lycee Portes de l'Oisans - Vizille, France</p>
             <p><em>obtained with honors</em></p>
-          </IonItem>
-          <IonItem>
-            <p>2011 - 2014</p>
-            <h3>SCIENTIFIC BACCALAUREATE</h3>
-            <h4>Lycee Portes de l'Oisans - Vizille, France</h4>
+          </div>
+        </div>
+        <div className="container left">
+          <div className="content">
+            <h2>2011 - 2014</h2>
+            <h4>SCIENTIFIC BACCALAUREATE</h4>
+            <p>Lycee Portes de l'Oisans - Vizille, France</p>
             <p><em>obtained with honors</em></p>
-          </IonItem>
-        </IonCardContent>
-      </IonCard>
+          </div>
+        </div>
+      </div>
+
     </IonContent>
   </>
 )
